@@ -1,0 +1,118 @@
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> npm create vite@latest client
+
+> npx
+> create-vite client
+
+√ Select a framework: » React
+√ Select a variant: » JavaScript + SWC
+
+Scaffolding project in C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client...
+
+Done. Now run:
+
+  cd client
+  npm install
+  npm run dev
+
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> cd client
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client> npm i
+
+added 225 packages, and audited 226 packages in 52s
+
+100 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client> npm install -D tailwindcss postcss autoprefixer
+
+added 91 packages, and audited 317 packages in 24s
+
+126 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client> npx tailwindcss init -p
+
+> client@0.0.0 npx
+> tailwindcss init -p
+
+
+Created Tailwind CSS config file: tailwind.config.js
+Created PostCSS config file: postcss.config.js
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client> npm run dev
+
+> client@0.0.0 dev
+> vite
+
+✔ Console Ninja extension is connected to Vite, see https://tinyurl.com/2vt8jxzw
+
+  VITE v5.2.11  ready in 1861 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+Error:   Failed to scan for dependencies from entries:
+  C:/Users/SEC/OneDrive/Desktop/mern_real_estate/client/index.html
+
+  X [ERROR] Unexpected "="
+
+    src/App.jsx:4:9:
+      4 │   return =<h1 className='text-red'>APP</h1>
+        ╵          ^
+
+
+    at failureErrorWithLog (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:1651:15)
+    at C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:1059:25
+    at runOnEndCallbacks (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:1486:45)
+    at buildResponseToResult (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:1057:7)
+    at C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:1069:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:1068:54)
+    at handleRequest (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:732:17)
+    at handleIncomingPacket (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:757:7)
+    at Socket.readFromStdout (C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client\node_modules\esbuild\lib\main.js:680:7)
+Terminate batch job (Y/N)? y
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client> npm run dev
+
+> client@0.0.0 dev
+> vite
+
+✔ Console Ninja extension is connected to Vite, see https://tinyurl.com/2vt8jxzw
+
+  VITE v5.2.11  ready in 597 ms
+
+  ➜  Local:   http://localhost:5173/
+2:06:45 pm [vite] hmr update /src/App.jsx, /src/index.css (x2)
+Terminate batch job (Y/N)? y
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate\client> cd ..
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> git add . 
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> git commit -m
+error: switch `m' requires a value
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> git commit -m "install react js and tailwind css and create your first template"
+[master (root-commit) 5fb991e] install react js and tailwind css and create your first template
+ 12 files changed, 5117 insertions(+)
+ create mode 100644 client/.eslintrc.cjs
+ create mode 100644 client/.gitignore
+ create mode 100644 client/README.md
+ create mode 100644 client/index.html
+ create mode 100644 client/package-lock.json
+ create mode 100644 client/package.json
+ create mode 100644 client/postcss.config.js
+ create mode 100644 client/src/App.jsx
+ create mode 100644 client/src/index.css
+ create mode 100644 client/src/main.jsx
+ create mode 100644 client/tailwind.config.js
+ create mode 100644 client/vite.config.js
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> git remote add origin https://github.com/ShakthiSundar-K/mern_real_estate_website.git
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> git branch -M main
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate> git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 42.45 KiB | 4.72 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ShakthiSundar-K/mern_real_estate_website.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\SEC\OneDrive\Desktop\mern_real_estate>
