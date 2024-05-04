@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 import userrouter from './routes/user.route.js';
 import authrouter from './routes/auth.route.js';
+import { nextTick } from 'process';
 dotenv.config();
 
 mongoose.connect(process.env.MONGO).then( () => {
@@ -23,3 +24,13 @@ app.listen(3000, () => {
 
 app.use("/api/user", userrouter)
 app.use("/api/auth", authrouter)
+
+app.use((err, req, res, next) => {
+    const statusCode =err.statusCode || 500;
+    const message = err.message || 'internal Server Error';
+    return res.status(statusCode).json({
+        success: false,
+        statusCode,
+        message
+    });
+}) 
